@@ -1,0 +1,67 @@
+REGISTER
+  url:'http://127.0.0.1:8000/api/register/' 
+  method:post
+  data:username,email,password
+
+TOKEN
+  url:'http://127.0.0.1:8000/api/token/' 
+  method:post
+  data:username,password
+
+MANDHI SHOP(along with reviews)
+  url:'http://127.0.0.1:8000/api/categories/' 
+  method:get
+  authentication:Token Authentication
+  
+MANDHI SHOP DETAIL
+  url:'http://127.0.0.1:8000/mandiitem/' 
+  method:get
+  authentication:Token Authentication
+
+ADD TO CART
+  url:'http://127.0.0.1:8000/api/mandiitem/:id/add_to_cart/' 
+  method:post
+  authentication:Token Authentication
+
+CART LIST
+  url:'http://127.0.0.1:8000/api/carts/' 
+  method:get
+  authentication:Token Authentication
+
+PLACE ORDER 
+  url:'http://127.0.0.1:8000/api/mandiitem/:id/place_order/' 
+  method:post
+  authentication:Token Authentication
+  data:address,matter
+
+LIST ORDER
+  url:'http://127.0.0.1:8000/api/orders/' 
+  method:get
+  authentication:Token Authentication
+
+ADD REVIEW
+  url:'http://127.0.0.1:8000/api/mandiitem/:id/add_review/' 
+  method:post
+  authentication:Token Authentication
+  data:comment,rating
+
+
+
+
+
+serializers - model serializer
+modelviewset & routers
+token authentication
+action decorator
+
+
+
+
+  
+
+
+  
+
+
+
+  
